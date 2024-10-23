@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リンクアクセスサイト</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .instructions {
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>リンクにアクセスする手順</h1>
+    <div class="instructions">
+        <ol>
+            <li>chromeでこのサイトに入る</li>
+            
+            <li>
+    <input type="text" id="textToCopy" value="lolbeans.io"">
+    <button onclick="copyText()">テキストをコピー</button>
+
+                        <li>下のどれかのリンクにアクセス（１絶対がおすすめ）</li>
+
+<li>さっきコピーした文真ん中の欄にを貼り付け、検索(enter) 広告が出てたら&#9747;</li>
+            <li>**（ソロの場合）**Nameに名前を入力してPLAYを押す</li>
+            <li>**（複数人の場合）**上の+PARTYをタップ</li>
+            <li>**（複数人の場合）** **(主催者)**　CREATE PARTY をタップして、新しい部屋を作り、
+                ROOM:CODE の右のアルファベット５文字を記憶するか選択してコピー、
+                チャットに貼り付けておくと良い　NAME二名前を入力　人が集まったらPLAY </li>
+            <li>**（複数人の場合）** **(入る人)**チャットにコードが多分送られてるから、それを
+                コピーして、上の+PARTY→Enter ROOM CODEの下の欄に貼り付け→JOIN で入れる
+                Nameに名前を入力　
+            </li>
+
+
+        </ol>
+    </div>
+<body>
+    <script>
+        function copyText() {
+            // コピーしたいテキストを取得
+            const textElement = document.getElementById("textToCopy");
+
+            // テキストフィールドを選択する
+            textElement.select();
+            textElement.setSelectionRange(0, 99999); // モバイル対応のために選択範囲を設定
+
+            try {
+                // 選択したテキストをコピー
+                document.execCommand("copy");
+                alert("テキストがコピーされました: " + textElement.value);
+            } catch (err) {
+                alert("コピーに失敗しました: " + err);
+            }
+
+            // 選択を解除する（視覚的な効果のため）
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+    <h1>どれかにアクセス</h1>
+    <ul>
+        <li><a href="https://demo.theoceancleanup.info/" target="_blank">リンク１</a></li>
+
+    </ul>
+</body>
+</html>
